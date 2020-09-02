@@ -1,1 +1,42 @@
+.app {
+  background-color: rgb(230, 228, 228);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.wrapper {
+  height: 450px;
+  width: 650px;
+  background-color: rgb(135, 212, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* LANDING PAGE CSS */
+.signin-content-box {
+  height: 350px;
+  width: 500px;
+}
+.submit-btn {
+   margin-top: 25px;
+}
+
+/* SIGN UP FORM CSS */
+.signup-form-box {
+  height: 350px;
+  width: 500px;
+}
+.main-form-box {
+  height: 230px;
+  width: 450px;
+  display: flex;
+}
+.left-form-box {
+  margin-right: 30px;
+}
+.submit-signup-btn {
+  margin-top: 30px;
+}
