@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 class SignUpForm extends React.Component {
     state = {
         firstName: '',
-        surname: '',
-        username: '',
+        surName: '',
+        lastName: '',
         email: '',
         password: ''
     }
@@ -22,12 +22,12 @@ class SignUpForm extends React.Component {
         e.preventDefault()
         const newForm = {
             firstName: this.state.firstName,
-            surname: this.state.surname,
-            username: this.state.username,
+            lastName: this.state.surname,
+            userName: this.state.username,
             email: this.state.email,
             password: this.state.password
         }
-        await axios.post('', newForm)
+        await axios.post('http://localhost:4500/vacationdetective/v1/addUser', newForm)
             .then(response => {
                 console.log(response)
             })
@@ -59,9 +59,9 @@ class SignUpForm extends React.Component {
                             <h3>Name:</h3>
                             <input type="text" name="firstName" onChange={this.handleChange} />
                             <h3>Surname:</h3>
-                            <input type="text" name="surname" onChange={this.handleChange} />
+                            <input type="text" name="lastName" onChange={this.handleChange} />
                             <h3>Username:</h3>
-                            <input type="text" name="username" onChange={this.handleChange} />
+                            <input type="text" name="userName" onChange={this.handleChange} />
                         </div>
                         <div className="right-form-box">
                             <h3>Email:</h3>
