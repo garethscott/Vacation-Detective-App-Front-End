@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import Checkbox from "./Checkbox";
+import ProfilePage from "./ProfilePage";
 
 const items = [
   "Museums",
@@ -64,6 +66,7 @@ class Questions extends Component {
                 Save
               </button>
             </form>
+            <Link to="/profile"><h3>Profile</h3></Link>
           </div>
         </div>
       </div>
