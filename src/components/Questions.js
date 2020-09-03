@@ -22,7 +22,7 @@ const items = [
 ];
 
 class Questions extends Component {
-  componentWillMount = () => {
+  componentDidMount = () => {
     this.selectedCheckboxes = new Set();
   };
 
